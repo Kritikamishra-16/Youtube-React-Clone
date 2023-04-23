@@ -59,13 +59,13 @@ const WatchPage = () => {
         getVideoData();
         return()=>{
             dispatch(addCls(""));
-            
+
         }
     },[videoId]);
 
     useEffect(()=>{
         setSubData(toggleBtn(channelId,items))
-    },);
+    },[channelId,items]);
 
     //we can not use it here to access params bcz here we have query params not normal : params
     // const params=useParams();
