@@ -1,4 +1,4 @@
-export const GOOGLE_API_KEY="AIzaSyA9lgIzKKT7smEiEYwmt5OoLrt2IBxhh8E";
+export const GOOGLE_API_KEY="AIzaSyBTrElEHolwA-CrFKbCYuUqHCBAoQMB6Xo";
 
 export const OFFSET_LIVE_CHAT=20;
 
