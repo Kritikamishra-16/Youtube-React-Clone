@@ -1,0 +1,29 @@
+import React from 'react'
+import { useSelector } from 'react-redux'
+import SubscriptionCard from './SubscriptionCard';
+
+const History = () => {
+  const historyArray=useSelector(store=>store?.history?.historyArray);
+  //console.log(historyArray);
+  return historyArray && (
+    <div className="">
+    <div className='text-xl flex m-3 p-3 font-bold'>
+        <p className='mx-3'>History</p> 
+        <img
+          src="data:image/png;base64,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"
+          alt="yt shots"
+          className="mt-1 h-5 pl-0 pt-1"
+          ></img>
+          </div>
+    <div className='flex flex-wrap'>
+      {historyArray?.map((video)=>{
+                return (
+                        <SubscriptionCard info={video} />
+                );
+            })}
+    </div>
+    </div>
+  )
+}
+
+export default History
